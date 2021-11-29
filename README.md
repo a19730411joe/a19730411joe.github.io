@@ -1,2 +1,2 @@
 # SDJ-OwO.github.io
-![](https://images.app.goo.gl/hmCKFNLN5m2UBDGp8 "meme")
+![](https://pic.pimg.tw/pig76925/1190446098.jpg)
