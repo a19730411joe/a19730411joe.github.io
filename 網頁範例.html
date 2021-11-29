@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript label example</title>
+    <style>
+      p {
+        font-family: 'helvetica neue', helvetica, sans-serif;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        border: 2px solid #0daf3199;
+        background: rgba(0,0,200,0.3);
+        color: rgba(0,0,200,0.6);
+        box-shadow: 1px 1px 2px rgba(0,0,200,0.4);
+        border-radius: 10px;
+        padding: 3px 10px;
+        display: inline-block;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <p id=a>asfsf</p>
+    <p id=b>asdfsafasdf</p>
+    <script>
+      const para = document.querySelector('#a');
+
+      para.addEventListener('click', updateName);
+
+      function updateName() {
+        let name = prompt('Enter a new name');
+        para.textContent = 'Player 1: ' + name;
+      }
+    </script>
+    <script>
+      const B = document.querySelector('#b');
+
+      B.addEventListener('click', updateName2);
+
+      function updateName2() {
+        let name2 = prompt('Enter a new name');
+        B.textContent = 'Player 2: ' + name2;
+      }
+    </script>
+  </body>
+</html>
