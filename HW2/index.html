@@ -1,0 +1,67 @@
+<html>
+    <head>
+        <script src="https://d3js.org/d3.v6.js"></script>
+        <title>HW2</title>
+    </head>
+    <body style="background-color: #FAEBD7">
+        <!--canvas-->
+        <div id="canvas"></div>
+        <script src="chart.js"></script>
+        <!--image-->
+        <div class="image">
+            <a href="https://www.taipower.com.tw/upload/43/43_04/%E5%85%AC%E5%8B%99%E7%B5%B1%E8%A8%88/110%E7%99%BC%E9%9B%BB%E8%A3%9D%E7%BD%AE%E5%AE%B9%E9%87%8F(%E5%85%AC%E5%8B%99).pdf">
+                <img src="./kanna.jpg" width="200" height="125"></a>←資料來源請點我
+            
+            
+        </div>
+        <!--content-->
+        <div class="content">
+            <p>
+                <h1>
+                    設計說明
+                </h1>
+                這次我選擇以台灣的電力分布為資料，製作有動態效果的圖，
+                其中動態的部分有三種，第一種是將滑鼠移到圓餅圖上時可以看到明確的發電量，單位為千瓦，
+                第二種是點擊右方的圖例時可以看到各種電力所佔的比例。第三種是點擊Total可以重置圓餅圖到原始的狀態。
+                <h1>
+                    設計選擇
+                </h1>
+                因為我要做的是不同種類的電力來源之間的比較，所以使用可以明顯看出所占比例的圓餅圖，
+                而為了方便查看每一種能源所佔的比例，我將被選取的能源種類設為黑色，其餘的則設為灰色，
+                如此一來能更清楚的觀察套它佔總體的比例。
+                <h1>
+                    經驗法則
+                </h1>
+                因為我們沒辦法經由觀察得知確切的佔比，所以我又在右下方多加了一行字，會隨著指定的部分改變，
+                目的是要讓使用者直接得到正確的比例。除此之外，我選擇的初始顏色都是各種能源在自然界的原始顏色，
+                所以即便使用者看不懂圖例的英文，還是有可能猜到能源類型的。
+            </p>
+        </div>
+        
+        
+    </body>
+</html>
+
+
+
+
+<style>
+    .image{
+        position:absolute;
+        left: 300;
+        top:500;
+        z-index: 0;
+    }
+    .content{
+        position:absolute;
+        width:500;
+        left:800;
+        top:50;
+        font-family: "微軟正黑體";
+        z-index: 0;
+    }
+    
+    
+    
+    
+</style>
