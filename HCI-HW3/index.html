@@ -1,0 +1,50 @@
+<html>
+    <head>
+        
+    </head>
+
+
+    <body>
+        <div>
+            <canvas id="draw" ></canvas>
+            <button class="button" type="button" onclick="Recognize()" disabled>Recognize</button>
+            <br><br>
+            <button class="button" type="button" onclick="AddGesture()" disabled>AddGesture</button>
+                <select name="select" id="myselect">
+                    <option>0</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                </select>
+            <br><br>
+            <button class="button" type="button" onclick="DeleteUserGestures()" disabled>DeleteUserGestures</button>
+        </div>
+        <script src="$1.js"></script>
+        <script src="script.js"></script>
+    </body>
+    
+</html>
+
+<style>
+    html,body{
+        margin-left: 50;
+        margin-top: 50;
+        background-color: antiquewhite;
+    }
+    #draw {
+        float: left;
+        background-color: aliceblue;
+    }
+    
+    button {
+        margin-left: 50;
+    }
+
+</style>
+
